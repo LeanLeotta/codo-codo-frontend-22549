@@ -6,16 +6,19 @@
 </head>
 <body>
     <h1>Formulario 1</h1>
-    <form>
+    <form action="registrar-formulario.html"
+    method="get">
 
     <label>Nombre:</label>
     <input type="text"
-        maxlength="5">
+        maxlength="5"
+        name="nombre">
 
     <label>Pasword</label>
     <input type="password" 
         maxlength="4"
-        size="4">
+        size="4"
+        name="pasword">
     <input type="submit" 
         value="Enviar">
 
@@ -25,7 +28,8 @@
 </form>
 
 <h1>Formulario 2</h1>
-<form>
+<form action="registrar-formulario.html"
+    method="post">
 
 <label>Opciones:</label>
 <input type="checkbox" value="Musica">
@@ -37,6 +41,8 @@
 <input type="radio" value="A" name="opciones">
 <label> Opcion B </label>
 <input type="radio" Value="B" name="opciones">
+<input type="submit" 
+        value="Enviar">
 
 
 
@@ -44,6 +50,49 @@
 
 </form>
 
+<form>
+
+<table>
+    <tr>
+        <td>
+            Nombre:
+        </td>
+        <td>
+            <input name="nombre" 
+            type="text">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Fech Nac:
+        </td>
+        <td>
+            <input name="nombre" 
+            type="date">
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            Edad:
+        </td>
+        <td>
+            <input name="nombre" 
+            type="number"min= "1" max="150" step="2">
+        </td>
+    </tr>
+
+
+
+
+
+
+
+</table>
+
+
+
+</form>
 
 <hr>
 <a href="index.html">about.html</a>
